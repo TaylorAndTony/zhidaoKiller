@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>559</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* 绿色按钮 */
+QPushButton
+{
+  font: 14pt &quot;Microsoft YaHei UI&quot;;
+  background-color:#9ccc65;
+  border:2px solid #7cb342;
+  border-radius:5px;
+  color: white;
+  padding: 6px 6px
+}
+QPushButton:hover
+{
+  font: 14pt &quot;Microsoft YaHei UI&quot;;
+  background-color:#7cb342;
+  border:2px solid #689f38;
+  border-radius:5px;
+  color:white;
+  padding: 6px 6px
+}
+QPushButton:hover:pressed
+{
+  font: 14pt &quot;Microsoft YaHei UI&quot;;
+  background-color:#558b2f; 
+  border:2px solid #33691e;
+  border-radius:5px;
+  color:white;
+  padding: 6px 6px
+}
+/* text input areas */
+QPlainTextEdit, QLineEdit
+{
+  font: 14pt &quot;Microsoft YaHei UI&quot;;
+  background-color:#fff8e1;
+  border:2px solid #ffcc80;
+  border-radius:5px;
+  color: #454545;
+  padding: 6px 6px
+}
+QLabel,QCheckBox,QRadioButton
+{
+  font: 14pt &quot;Microsoft YaHei UI&quot;;
+}
+QLCDNumber
+{
+  background-color:#eceff1;
+  border:2px solid #90a4ae;
+  color:#000000;
+  border-radius:5px;
+  color:#455a64;
+  padding: 6px 6px
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>观看时长：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="howLong">
+       <property name="text">
+        <string>10</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="control">
+       <property name="text">
+        <string>控制手机自动按下返回键</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QTableWidget" name="listOfCource">
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderStretchLastSection">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>课程名称</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>上次日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>连续观看</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>状态</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="connADB">
+         <property name="text">
+          <string>连接 ADB</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="beginWatching">
+         <property name="text">
+          <string>开始观看</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stopNow">
+         <property name="text">
+          <string>停止观看</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="refreshIt">
+         <property name="text">
+          <string>刷新</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPlainTextEdit" name="outLine"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
